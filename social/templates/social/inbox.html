@@ -1,0 +1,44 @@
+{% extends 'landing/base.html' %}
+
+{% block content %}
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-6 p-1" style="text-align: right;color:#3bb45d">
+			<h3>Chat</h3>
+			
+		</div>
+		<div class="col-md-6 p-1" style="text-align: left;color:#007bff">
+			
+			<h3>Inbox</h3>
+		</div>
+	</div>
+
+	{% comment %} <div class="row mt-5">
+        <div class="col-md-3 col-sm-6">
+            <a href="{% url 'post-list' %}" class="btn btn-light">Back to Feed</a>
+        </div>
+    </div> {% endcomment %}
+
+	<div class="row">
+		<div class="col-md-3 col-sm-6">
+            <a href="{% url 'post-list' %}" class="btn btn-light">Back to Feed</a>
+        </div>
+		<div class="col-md-12 p-5">
+			<form method="GET" action="{% url 'create-thread' %}">
+				<button class="btn btn-light p-3" type="submit">Start a Conversation</button>
+			</form>
+		</div>
+	</div>
+
+	{% for thread in threads.all %}
+	<div class="row mb-3">
+		<div class="card col-md-12 p-5 shadow-sm">
+			<h5><i class="far fa-envelope inbox-icon"></i>@{{ thread.user }} - @{{ thread.receiver }}</h5>
+			<a class="stretched-link" href="{% url 'thread' thread.pk %}"></a>
+		</div>
+	</div>
+	{% endfor %}
+</div>
+
+{% endblock content %}

@@ -1,0 +1,274 @@
+.remove-default-btn {
+	background-color: transparent;
+	border: none;
+	box-shadow: none;
+}
+
+.edit-color {
+	color: #333;
+}
+
+.post-link {
+	text-decoration: none;
+}
+
+.post-text {
+	padding-top: 0.5rem;
+}
+
+.post-img {
+	float: left;
+	margin-right: 1rem;
+}
+
+.post-image {
+	max-width: 100%;
+	height: auto;
+	border-radius: 10px;
+	margin-bottom: 10px;
+}
+
+.child-comment {
+	margin-left: 2rem;
+}
+
+.notification-badge {
+	transition: 0.3s;
+	z-index: 2;
+}
+
+.notification-badge:hover {
+	cursor: pointer;
+	opacity: 0.75;
+	transition: 0.3s;
+	z-index: 2;
+}
+
+.dropdown {
+	position: relative;
+	display: inline-block;
+	z-index: 2;
+}
+
+.dropdown-content {
+	position: absolute;
+    top: 100%;
+    right: 0;
+	background-color: #f1f1f1;
+	min-width: 350px;
+	box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.2);
+	z-index: 2;
+	font-size: 0.9rem;
+}
+
+.dropdown-content a {
+	color: #000;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	z-index: 2;
+}
+
+.dropdown-content a:hover {
+	background-color: #ddd;
+	z-index: 2;
+}
+
+.dropdown-item-parent {
+	position: relative;
+	display: block;
+	z-index: 2;
+}
+
+.dropdown-item-close {
+	position: absolute;
+	
+	top: 0;
+	right: 0;
+	font-size: 1.8rem;
+	padding-right: 5px;
+	transition: 0.3s;
+	z-index: 2;
+}
+
+.dropdown-item-close:hover {
+	color: rgb(180, 25, 25);
+	transition: 0.3s;
+	cursor: pointer;
+	z-index: 2;
+}
+
+.inbox-icon-container {
+	margin-right: 15px;
+}
+
+.inbox-icon {
+	color: #333;
+	transition: 0.5s;
+}
+
+.inbox-icon:hover {
+	transition: 0.5s;
+}
+
+.empty-text {
+	color: #777;
+	font-size: 1.5rem;
+	text-align: center;
+}
+
+.sent-message {
+	background-color: #f3f3f3;
+	border-radius: 30px;
+	padding: 10px 25px;
+	width: 35%;
+}
+
+.received-message {
+	background-color: rgb(1, 196, 255);
+	color: #fff;
+	border-radius: 30px;
+	padding: 10px 25px;
+	width: 35%;
+}
+
+.message-receiver-container {
+	margin-left: auto;
+	margin-right: 0;
+}
+
+.message-image {
+	border-radius: 10px;
+	max-width: 35%;
+	height: auto;
+}
+
+.inbox-icon {
+	margin-right: 5px;
+}
+
+.share-btn {
+	cursor: pointer;
+}
+
+.shared-post {
+	margin-left: 30px;
+}
+
+
+.inbox-icon-container:hover .inbox-icon {
+    color: #5dda0f; /* Change to your desired icon color on hover */
+	z-index: 2;
+}
+
+.nav-item.dropdown:hover .nav-link {
+    background-color: #f8f9fa; /* Your hover background color for the dropdown toggle */
+    color: #007bff; /* Your hover text color for the dropdown toggle */
+	z-index: 2;
+}
+
+/* Dropdown item styles */
+.nav-item.dropdown:hover .dropdown-menu a:hover {
+    background-color: #007bff; /* Your hover background color for the dropdown items */
+    color: #ffffff; /* Your hover text color for the dropdown items */
+	z-index: 2;
+}
+
+.nav-item.dropdown:hover .nav-link {
+    background-color: #f8f9fa; /* Your hover background color for the dropdown toggle */
+    color: #007bff; /* Your hover text color for the dropdown toggle */
+	z-index: 2;
+}
+
+/* Icon styles on hover */
+.nav-item.dropdown:hover .dropdown-toggle i.fas.fa-user {
+    color: #007bff; /* Your hover color for the icon */
+	z-index: 2;
+}
+
+.nav-item.dropdown .dropdown-toggle i.fas.fa-user {
+    color: #3bb45d; /* Your hover color for the icon */
+	cursor: pointer;
+	z-index: 2;
+}
+
+.nav-item.dropdown .dropdown-toggle {
+	cursor: pointer;
+     /* Your hover background color for the dropdown items */
+    color: #ff5900; /* Your hover text color for the dropdown items */
+	z-index: 2;
+}
+/* Dropdown item styles */
+.nav-item.dropdown:hover .dropdown-menu a:hover {
+    background-color: #007bff; /* Your hover background color for the dropdown items */
+    color: #ffffff; /* Your hover text color for the dropdown items */
+	z-index: 2;
+}
+
+.navbar-light .navbar-brand:hover{
+    color:#007bff; /* Your hover text color for the navbar brand */
+	
+	
+}
+
+.navbar-brand:hover .fas.fa-comment {
+    color: #2fe463; /* Your hover icon color */
+}
+
+.navbar-light .navbar-brand{
+    color:#3bb45d; /* Your hover text color for the navbar brand */
+	
+	
+}
+
+.navbar-brand .fas.fa-comment {
+    color: #007bff; /* Your hover icon color */
+}
+
+.btn-light {
+	margin-top: 1rem;
+   margin-bottom: 1rem;
+}
+
+.btn-light:hover {
+    background-color: #007bff; /* Your hover background color for the button */
+    color: #ffffff; /* Your hover text color for the button */
+}
+
+
+.btn-dark {
+	margin-top: 1rem;
+	margin-left:1rem;
+	margin-bottom: 1rem;
+   
+}
+
+.btn-dark:hover {
+    background-color: #3bb45d; /* Your hover background color for the button */
+    color: #ffffff; /* Your hover text color for the button */
+}
+
+body {
+    background: linear-gradient(to bottom, #5153dc, #de409f); /* Adjust colors as needed */
+	background-image: url('media/bg2.jpeg');
+            /* Set the background image to cover the entire viewport */
+    background-size: cover;
+            /* Center the background image */
+    background-position: center;
+            /* Set a fixed background attachment to prevent scrolling */
+    background-attachment: fixed;
+            /* Add some additional styling */
+    margin: 0;
+    padding: 0;
+	z-index: 1;
+	backdrop-filter: blur(10px); /* Adjust the blur value for more or less frosted effect */
+    -webkit-backdrop-filter: blur(15px);
+}
+
+.container{
+	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.46); /* Adjust values as needed */
+	background-color: rgba(255, 255, 255, 0.5);
+	
+	z-index: 1;
+	
+}  
